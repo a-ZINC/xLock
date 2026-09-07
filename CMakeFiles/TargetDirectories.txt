@@ -1,0 +1,5 @@
+/mnt/c/Users/ajink/source/repos/xLock/CMakeFiles/edit_cache.dir
+/mnt/c/Users/ajink/source/repos/xLock/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/ajink/source/repos/xLock/xLock/CMakeFiles/test_s_lock.dir
+/mnt/c/Users/ajink/source/repos/xLock/xLock/CMakeFiles/edit_cache.dir
+/mnt/c/Users/ajink/source/repos/xLock/xLock/CMakeFiles/rebuild_cache.dir
