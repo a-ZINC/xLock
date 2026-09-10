@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/mnt/c/Users/ajink/source/repos/xLock/cmake_install.cmake",
-		"/mnt/c/Users/ajink/source/repos/xLock/xLock/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

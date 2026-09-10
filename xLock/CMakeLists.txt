@@ -18,3 +18,12 @@ set_target_properties(test_s_lock PROPERTIES
 )
 
 add_test(NAME s_lock_correctness COMMAND test_s_lock)
+
+add_executable(test_ttas_lock tests/test_ttas_spin_lock.cpp)
+target_link_libraries(test_ttas_lock PRIVATE locks Threads::Threads)
+set_target_properties(test_ttas_lock PROPERTIES
+    CXX_STANDARD 20
+    CXX_STANDARD_REQUIRED ON
+    CXX_EXTENSIONS OFF
+)
+add_test(NAME ttas_lock_correctness COMMAND test_ttas_lock)

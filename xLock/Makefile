@@ -130,6 +130,20 @@ test_s_lock/fast:
 	cd /mnt/c/Users/ajink/source/repos/xLock && $(MAKE) $(MAKESILENT) -f xLock/CMakeFiles/test_s_lock.dir/build.make xLock/CMakeFiles/test_s_lock.dir/build
 .PHONY : test_s_lock/fast
 
+# Convenience name for target.
+xLock/CMakeFiles/test_ttas_lock.dir/rule:
+	cd /mnt/c/Users/ajink/source/repos/xLock && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 xLock/CMakeFiles/test_ttas_lock.dir/rule
+.PHONY : xLock/CMakeFiles/test_ttas_lock.dir/rule
+
+# Convenience name for target.
+test_ttas_lock: xLock/CMakeFiles/test_ttas_lock.dir/rule
+.PHONY : test_ttas_lock
+
+# fast build rule for target.
+test_ttas_lock/fast:
+	cd /mnt/c/Users/ajink/source/repos/xLock && $(MAKE) $(MAKESILENT) -f xLock/CMakeFiles/test_ttas_lock.dir/build.make xLock/CMakeFiles/test_ttas_lock.dir/build
+.PHONY : test_ttas_lock/fast
+
 tests/test_s_lock.o: tests/test_s_lock.cpp.o
 .PHONY : tests/test_s_lock.o
 
@@ -154,6 +168,30 @@ tests/test_s_lock.cpp.s:
 	cd /mnt/c/Users/ajink/source/repos/xLock && $(MAKE) $(MAKESILENT) -f xLock/CMakeFiles/test_s_lock.dir/build.make xLock/CMakeFiles/test_s_lock.dir/tests/test_s_lock.cpp.s
 .PHONY : tests/test_s_lock.cpp.s
 
+tests/test_ttas_spin_lock.o: tests/test_ttas_spin_lock.cpp.o
+.PHONY : tests/test_ttas_spin_lock.o
+
+# target to build an object file
+tests/test_ttas_spin_lock.cpp.o:
+	cd /mnt/c/Users/ajink/source/repos/xLock && $(MAKE) $(MAKESILENT) -f xLock/CMakeFiles/test_ttas_lock.dir/build.make xLock/CMakeFiles/test_ttas_lock.dir/tests/test_ttas_spin_lock.cpp.o
+.PHONY : tests/test_ttas_spin_lock.cpp.o
+
+tests/test_ttas_spin_lock.i: tests/test_ttas_spin_lock.cpp.i
+.PHONY : tests/test_ttas_spin_lock.i
+
+# target to preprocess a source file
+tests/test_ttas_spin_lock.cpp.i:
+	cd /mnt/c/Users/ajink/source/repos/xLock && $(MAKE) $(MAKESILENT) -f xLock/CMakeFiles/test_ttas_lock.dir/build.make xLock/CMakeFiles/test_ttas_lock.dir/tests/test_ttas_spin_lock.cpp.i
+.PHONY : tests/test_ttas_spin_lock.cpp.i
+
+tests/test_ttas_spin_lock.s: tests/test_ttas_spin_lock.cpp.s
+.PHONY : tests/test_ttas_spin_lock.s
+
+# target to generate assembly for a file
+tests/test_ttas_spin_lock.cpp.s:
+	cd /mnt/c/Users/ajink/source/repos/xLock && $(MAKE) $(MAKESILENT) -f xLock/CMakeFiles/test_ttas_lock.dir/build.make xLock/CMakeFiles/test_ttas_lock.dir/tests/test_ttas_spin_lock.cpp.s
+.PHONY : tests/test_ttas_spin_lock.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -163,9 +201,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_s_lock"
+	@echo "... test_ttas_lock"
 	@echo "... tests/test_s_lock.o"
 	@echo "... tests/test_s_lock.i"
 	@echo "... tests/test_s_lock.s"
+	@echo "... tests/test_ttas_spin_lock.o"
+	@echo "... tests/test_ttas_spin_lock.i"
+	@echo "... tests/test_ttas_spin_lock.s"
 .PHONY : help
 
 

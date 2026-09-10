@@ -129,6 +129,19 @@ test_s_lock/fast:
 	$(MAKE) $(MAKESILENT) -f xLock/CMakeFiles/test_s_lock.dir/build.make xLock/CMakeFiles/test_s_lock.dir/build
 .PHONY : test_s_lock/fast
 
+#=============================================================================
+# Target rules for targets named test_ttas_lock
+
+# Build rule for target.
+test_ttas_lock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ttas_lock
+.PHONY : test_ttas_lock
+
+# fast build rule for target.
+test_ttas_lock/fast:
+	$(MAKE) $(MAKESILENT) -f xLock/CMakeFiles/test_ttas_lock.dir/build.make xLock/CMakeFiles/test_ttas_lock.dir/build
+.PHONY : test_ttas_lock/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -138,6 +151,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_s_lock"
+	@echo "... test_ttas_lock"
 .PHONY : help
 
 

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/mnt/c/Users/ajink/source/repos/xLock/xLock/include
 
-CXX_FLAGS = 
+CXX_FLAGS = -fsanitize=thread -g -O2 -std=c++20
 

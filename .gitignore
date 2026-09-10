@@ -361,3 +361,24 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Build directories (matches 'build/', 'sub/build/', 'a/b/build/', etc.)
+**/build/
+**/bin/
+**/lib/
+
+# CMake generated files and caches (recursively)
+/CMakeFiles/
+**/CMakeCache.txt
+**/CMakeFiles/
+**/CMakeScripts/
+**/cmake_install.cmake
+**/Makefile
+**/CTestTestfile.cmake
+**/Testing/
+**/_deps/
+
+# Compiled objects and binaries
+*.o
+*.obj
+*.exe
